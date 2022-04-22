@@ -17,9 +17,15 @@
 
             <div class="list d-flex justify-content-center align-items-center"  >
                 <ul> 
-                    <section v-for="task in tasks">
-                        <li v-if="task.done === true" class="done">{{task.text}}</li>
-                        <li v-else="">{{task.text}}</li>
+                    <section v-for="(task,index) in tasks">
+                        <li v-if="task.done === true" class="done">
+                            {{task.text}}
+                            <i class="fa-solid fa-xmark" @click="removeTask(index)" ></i>
+                        </li>
+                        <li v-else="">
+                            {{task.text}}
+                            <i class="fa-solid fa-xmark" @click="removeTask(index)"></i>
+                        </li>
 
                     </section>
                 </ul>
