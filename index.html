@@ -15,7 +15,16 @@
 
         <div class="container">
 
-            <div class="list d-flex justify-content-center align-items-center"  >
+            <h1>Todo list</h1>
+
+            <div class="list d-flex  flex-column" >
+
+                <section class="newTasks d-flex mb-5">
+                    <input type="text" v-model="newTask" placeholder="Next task?" >
+                    <button type="button" class="btn btn-dark" @click="addTask" v-if="!newTask.length == 0">Add</button>
+
+                </section>
+
                 <ul> 
                     <section v-for="(task,index) in tasks">
                         <li v-if="task.done === true" class="done">

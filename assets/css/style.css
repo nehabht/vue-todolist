@@ -6,6 +6,18 @@
 
 body{
     background-color: thistle;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 40px;
+    background-color: black;
+    color:white;
+    padding-bottom: 30px;
 }
 
 .done{
@@ -13,5 +25,37 @@ body{
 }
 
 .list{
-    height: 100vh;
+    margin-top: 5rem;
+    align-items: center;
+
 }
+
+li{
+    margin-top: 10px;
+}
+
+.newTasks{
+    width: 340px;
+    height: 50px;
+
+}
+
+ul{
+    margin-right: 150px;
+}
+
+
+.newTasks input{
+    border-radius: 20px;
+    padding: 4px 18px;
+}
+
+.btn{
+    border-radius: 20px;
+    margin-left: 50px;
+    padding: 1px 31px;
+}
+
+
+
+
